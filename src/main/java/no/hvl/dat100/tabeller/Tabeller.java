@@ -105,7 +105,13 @@ public class Tabeller {
 	// g)
    public static boolean erSortert(int[] tabell) {
         
-      
+        for (int i = 0; i < tabell.length - 1; i++) {
+            if (tabell[i] > tabell[i + 1]) {
+                return false; 
+            }
+        }
+        return true; 
+    }
 
 
 
