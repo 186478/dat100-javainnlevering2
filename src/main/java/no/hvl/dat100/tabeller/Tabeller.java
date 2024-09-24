@@ -11,7 +11,7 @@ public class Tabeller {
 		System.out.println(resultat);
 		
 		int[] sjekkTabell = {1, 2, 4, 6, 10, 14};
-		boolean sjekk = finnesTall(sjekkTabell);
+		boolean sjekk = finnesTall(sjekkTabell, 2);
 		System.out.println(sjekk);
 
 		int[] posisjonTabell = { 1, 2, 3, 4, 5, 6, 7 };
@@ -34,6 +34,10 @@ public class Tabeller {
         for (int tall : sammensattTabell) {
             System.out.print(tall + " ");
         }
+        
+        int[] usortertTabell = {5, 3, 2, 6, 1};
+        boolean sjekket = erSortert(usortertTabell);
+        System.out.println(sjekket);
 
 	}
 
@@ -122,8 +126,14 @@ public class Tabeller {
 	public static boolean erSortert(int[] tabell) {
 
 		// TODO
-		throw new UnsupportedOperationException("Metoden erSortert ikke implementert");
-	}
+	    for (int i = 0; i < tabell.length - 1; i++) {
+            if (tabell[i] > tabell[i + 1]) { 
+                return false; 
+            }
+        }
+        return true; 
+    }
+	
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
