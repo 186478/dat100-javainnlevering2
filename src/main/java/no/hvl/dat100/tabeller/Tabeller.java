@@ -9,6 +9,12 @@ public class Tabeller {
 		int [] strengTabell = {42,67,89};
 		String resultat = tilStreng(strengTabell);
 		System.out.println(resultat);
+		
+		
+		
+		 
+		}
+
 	}
 
 	public static void skrivUt(int[] tabell) {
@@ -48,16 +54,25 @@ public class Tabeller {
 	}
 
 	// d)
-	public static boolean finnesTall(int[] tabell, int tall) {
+	public static boolean finnesTall(int[] Tabell, int tall ) {
+		
+		
+		
 
-		for (int i = 0; i <= tabell.length; i++) {
-		     if (tabell[i] == tall) {
-	                return true; 
+		for (int i = 0; i <= Tabell.length; i++) {
+		     if (Tabell[i] == tall) {
+	                return true;
 	            }
 		    }
 	        return false;
-	 }
-
+	    
+        if (finnesTall(Tabell, tall)) {
+	        System.out.println(tall + " finnes i tabellen.");
+	    } else {
+	        System.out.println(tall + " finnes ikke i tabellen.");
+	    }
+	}
+	
 	
 
 	// e)
