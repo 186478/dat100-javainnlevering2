@@ -7,6 +7,7 @@ public class Tabeller {
 		skrivUt(heltallTabell);
 		
 		int [] strengTabell = {42,67,89};
+<<<<<<< HEAD
 		String resultat = tilStreng(strengTabell);
 		System.out.println(resultat);
 		
@@ -18,10 +19,13 @@ public class Tabeller {
 		
 		 
 		
+=======
+		//String resultat = tilStreng(strengTabell);		
+>>>>>>> 6b1c3150b7e266417a5872dc3ead7945b252e724
 		//System.out.print(resultat);
 		
 		int [] posisjonTabell = {1,2,3,4,5,6,7};
-		int posisjon = posisjonTall(posisjonTabell, 3);
+		//int posisjon = posisjonTall(posisjonTabell, 3);
 		//System.out.println("Posisjonen til tallet er: " + posisjon);
 		//posisjon = posisjonTall(posisjonTabell, 60);
         //System.out.println(posisjon);
