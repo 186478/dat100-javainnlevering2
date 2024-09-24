@@ -9,9 +9,9 @@ public class Tabeller {
 		int[] strengTabell = { 42, 67, 89 };
 		String resultat = tilStreng(strengTabell);
 		System.out.println(resultat);
-
-		int[] sjekkTabell = { 1, 2, 4, 6, 10, 14 };
-		boolean sjekk = finnesTall(sjekkTabell, 1);
+		
+		int[] sjekkTabell = {1, 2, 4, 6, 10, 14};
+		boolean sjekk = finnesTall(sjekkTabell);
 		System.out.println(sjekk);
 
 		int[] posisjonTabell = { 1, 2, 3, 4, 5, 6, 7 };
@@ -19,13 +19,11 @@ public class Tabeller {
 		// System.out.println("Posisjonen til tallet er: " + posisjon);
 		// posisjon = posisjonTall(posisjonTabell, 60);
 		// System.out.println(posisjon);
-
-		int[] reverserTabell = { 1, 2, 3, 4, 5, 6 };
+		
+		int [] reverserTabell = {1,2,3,4,5,6};
 		int nyTabell = reverser(reverserTabell);
 		System.out.print(nyTabell);
 
-		int[] startTabell = { 1, 20, 14, 12, 19 };
-		boolean sortertTabell = erSortert(startTabell);
 	}
 
 	public static void skrivUt(int[] tabell) {
@@ -76,6 +74,8 @@ public class Tabeller {
 		return false;
 	}
 
+	
+
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
 
@@ -92,30 +92,25 @@ public class Tabeller {
 	public static int[] reverser(int[] tabell) {
 
 		int nyTabell = 0;
-
+		
 		for (int i = tabell.length; i > 0; i--) {
 			nyTabell += tabell[i];
 			if (i > 1) {
-
+				
 			}
 		}
-
+		
+		
 	}
 
 	// g)
-   public static boolean erSortert(int[] tabell) {
-        
-        for (int i = 0; i < tabell.length - 1; i++) {
-            if (tabell[i] > tabell[i + 1]) {
-                return false; 
-            }
-        }
-        return true; 
-    }
+	public static boolean erSortert(int[] tabell) {
 
+		// TODO
+		throw new UnsupportedOperationException("Metoden erSortert ikke implementert");
+	}
 
-
-// h)
+	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
 		// TODO
