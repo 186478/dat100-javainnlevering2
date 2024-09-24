@@ -10,6 +10,10 @@ public class Tabeller {
 		String resultat = tilStreng(strengTabell);
 		System.out.println(resultat);
 		
+		int[] sjekkTabell = {1, 2, 4, 6, 10, 14};
+		boolean sjekk = finnesTall(sjekkTabell, 5);
+		System.out.println(sjekk);
+		
 		
 		
 		 
@@ -33,7 +37,7 @@ public class Tabeller {
 	        }
 		}
 		
-	}
+	} 
 
 	// b)
 	public static String tilStreng(int[] tabell) {
@@ -73,11 +77,6 @@ public class Tabeller {
 		    }
 	        return false;
 	    
-        if (finnesTall(Tabell, tall)) {
-	        System.out.println(tall + " finnes i tabellen.");
-	    } else {
-	        System.out.println(tall + " finnes ikke i tabellen.");
-	    }
 	}
 	
 	
