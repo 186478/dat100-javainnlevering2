@@ -91,8 +91,15 @@ public class Tabeller {
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden reverser ikke implementert");
+		String nyTabell = "[";
+		
+		for (int i = tabell.length; i > 0; i--) {
+			nyTabell += tabell[i];
+			if (i > 1) {
+				nyTabell += ",";
+			}
+		}
+		
 	}
 
 	// g)
