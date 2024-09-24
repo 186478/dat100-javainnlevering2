@@ -4,10 +4,11 @@ public class Tabeller {
 
 	public static void main(String[] args) {
 		int [] heltallTabell = {3,7,2,8};
-		//skrivUt(heltallTabell);
+		skrivUt(heltallTabell);
 		
 		int [] strengTabell = {42,67,89};
 		String resultat = tilStreng(strengTabell);
+<<<<<<< HEAD
 		System.out.println(resultat);
 		
 		
@@ -15,6 +16,15 @@ public class Tabeller {
 		 
 		}
 
+=======
+		//System.out.print(resultat);
+		
+		int [] posisjonTabell = {1,2,3,4,5,6,7};
+		int posisjon = posisjonTall(posisjonTabell, 3);
+		//System.out.println("Posisjonen til tallet er: " + posisjon);
+		//posisjon = posisjonTall(posisjonTabell, 60);
+        //System.out.println(posisjon);
+>>>>>>> e68ed320cb5ca74822f76332939b4fe9dd29186d
 	}
 
 	public static void skrivUt(int[] tabell) {
@@ -78,7 +88,12 @@ public class Tabeller {
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
 
-		
+		for (int i = 0; i < tabell.length; i++) {
+			if (tabell[i] == tall) {
+				return i;
+			}
+		}
+		return -1;
 		
 	}
 
