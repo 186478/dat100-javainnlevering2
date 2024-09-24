@@ -8,15 +8,12 @@ public class Tabeller {
 		
 		int [] strengTabell = {42,67,89};
 		String resultat = tilStreng(strengTabell);
-<<<<<<< HEAD
 		System.out.println(resultat);
 		
 		
 		
 		 
-		}
-
-=======
+		
 		//System.out.print(resultat);
 		
 		int [] posisjonTabell = {1,2,3,4,5,6,7};
@@ -24,7 +21,7 @@ public class Tabeller {
 		//System.out.println("Posisjonen til tallet er: " + posisjon);
 		//posisjon = posisjonTall(posisjonTabell, 60);
         //System.out.println(posisjon);
->>>>>>> e68ed320cb5ca74822f76332939b4fe9dd29186d
+
 	}
 
 	public static void skrivUt(int[] tabell) {
