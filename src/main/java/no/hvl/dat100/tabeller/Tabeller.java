@@ -2,11 +2,17 @@ package no.hvl.dat100.tabeller;
 
 public class Tabeller {
 
-	// a)
-	public static void skrivUt(int[] tabell) {
+	public static void main(String[] args) {
+		int [] tabell = {3,7,2,8};
+		skrivUt(tabell);
 
-		System.out.println("test");
+	}
+
+	public static void skrivUt(int[] tabell) {
 		
+		for (int i = 0; i < tabell.length; i++) {
+			System.out.print(tabell[i] + ", ");
+		}
 	}
 
 	// b)
