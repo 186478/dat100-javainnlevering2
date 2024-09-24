@@ -7,21 +7,20 @@ public class Tabeller {
 		skrivUt(heltallTabell);
 		
 		int [] strengTabell = {42,67,89};
-<<<<<<< HEAD
+
 		String resultat = tilStreng(strengTabell);
 		System.out.println(resultat);
 		
 		int[] sjekkTabell = {1, 2, 4, 6, 10, 14};
-		boolean sjekk = finnesTall(sjekkTabell, 5);
+		boolean sjekk = finnesTall(sjekkTabell, );
 		System.out.println(sjekk);
 		
 		
 		
 		 
 		
-=======
+
 		//String resultat = tilStreng(strengTabell);		
->>>>>>> 6b1c3150b7e266417a5872dc3ead7945b252e724
 		//System.out.print(resultat);
 		
 		int [] posisjonTabell = {1,2,3,4,5,6,7};
