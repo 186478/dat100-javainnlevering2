@@ -4,15 +4,19 @@ public class Tabeller {
 
 	public static void main(String[] args) {
 		int[] heltallTabell = { 3, 7, 2, 8 };
-		skrivUt(heltallTabell);
+		//skrivUt(heltallTabell);
 
 		int[] strengTabell = { 42, 67, 89 };
-		String resultat = tilStreng(strengTabell);
-		System.out.println(resultat);
+		//String resultat = tilStreng(strengTabell);
+		//System.out.println(resultat);
+		
+		int[] sumTabell = {20, 13, 30};
+		//int sum = summer(sumTabell);
+		//System.out.print(sum);
 		
 		int[] sjekkTabell = {1, 2, 4, 6, 10, 14};
-		boolean sjekk = finnesTall(sjekkTabell);
-		System.out.println(sjekk);
+		//boolean sjekk = finnesTall(sjekkTabell);
+		//System.out.println(sjekk);
 
 		int[] posisjonTabell = { 1, 2, 3, 4, 5, 6, 7 };
 		// int posisjon = posisjonTall(posisjonTabell, 3);
@@ -20,10 +24,19 @@ public class Tabeller {
 		// posisjon = posisjonTall(posisjonTabell, 60);
 		// System.out.println(posisjon);
 		
-		int [] reverserTabell = {1,2,3,4,5,6};
-		int nyTabell = reverser(reverserTabell);
-		System.out.print(nyTabell);
-
+		int [] normalTabell = {1,2,3,4,5,6};
+		int [] reversertTabell = reverser(normalTabell);
+		//for (int tall : reversertTabell) {
+        //    System.out.print(tall + " ");
+        //}
+		
+		
+		int[] tabell1 = {1, 2, 3};
+        int[] tabell2 = {4, 5, 6};
+        int[] sammensattTabell = settSammen(tabell1, tabell2);
+        for (int tall : sammensattTabell) {
+            System.out.print(tall + " ");
+        }
 	}
 
 	public static void skrivUt(int[] tabell) {
@@ -59,6 +72,11 @@ public class Tabeller {
 	public static int summer(int[] tabell) {
 
 		int sum = 0;
+		
+		for (int i = 0; i < tabell.length; i++) {
+			sum += tabell[i];
+		}
+		return sum;
 
 	}
 
@@ -91,16 +109,13 @@ public class Tabeller {
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-		int nyTabell = 0;
+		int[] reversert = new int[tabell.length];
 		
-		for (int i = tabell.length; i > 0; i--) {
-			nyTabell += tabell[i];
-			if (i > 1) {
-				
-			}
-		}
+		for (int i = 0; i < tabell.length; i++) {
+            reversert[i] = tabell[tabell.length - 1 - i];
+        }
 		
-		
+		return reversert;
 	}
 
 	// g)
@@ -113,8 +128,15 @@ public class Tabeller {
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden settSammen ikke implementert");
+		int[] sammensatt = new int[tabell1.length + tabell2.length];
+		
+		for (int i = 0; i < tabell1.length; i++) {
+            sammensatt[i] = tabell1[i];
+        }
+		for (int i = 0; i < tabell2.length; i++) {
+            sammensatt[tabell1.length + i] = tabell2[i];
+        }
+		return sammensatt;
 
 	}
 }
