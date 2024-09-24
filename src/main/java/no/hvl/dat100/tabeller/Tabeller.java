@@ -7,43 +7,22 @@ public class Tabeller {
 		skrivUt(heltallTabell);
 
 		int[] strengTabell = { 42, 67, 89 };
-
 		String resultat = tilStreng(strengTabell);
 		System.out.println(resultat);
-<<<<<<< HEAD
 		
 		int[] sjekkTabell = {1, 2, 4, 6, 10, 14};
 		boolean sjekk = finnesTall(sjekkTabell);
 		System.out.println(sjekk);
-		
-
-		//String resultat = tilStreng(strengTabell);		
-		//System.out.print(resultat);
-		
-		int [] posisjonTabell = {1,2,3,4,5,6,7};
-		//int posisjon = posisjonTall(posisjonTabell, 3);
-		//System.out.println("Posisjonen til tallet er: " + posisjon);
-		//posisjon = posisjonTall(posisjonTabell, 60);
-        //System.out.println(posisjon);
-		
-		int [] reverserTabell = {1,2,3,4,5,6};
-		String nyTabell = reverser(reverserTabell);
-		System.out.print(nyTabell);
-=======
-
-		int[] sjekkTabell = { 1, 2, 4, 6, 10, 14 };
-		boolean sjekk = finnesTall(sjekkTabell, 7);
-		System.out.println(sjekk);
-
-		// String resultat = tilStreng(strengTabell);
-		// System.out.print(resultat);
 
 		int[] posisjonTabell = { 1, 2, 3, 4, 5, 6, 7 };
 		// int posisjon = posisjonTall(posisjonTabell, 3);
 		// System.out.println("Posisjonen til tallet er: " + posisjon);
 		// posisjon = posisjonTall(posisjonTabell, 60);
 		// System.out.println(posisjon);
->>>>>>> ea957a85fe273ad1648a146011609fa396870d85
+		
+		int [] reverserTabell = {1,2,3,4,5,6};
+		int nyTabell = reverser(reverserTabell);
+		System.out.print(nyTabell);
 
 	}
 
