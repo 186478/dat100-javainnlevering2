@@ -12,12 +12,8 @@ public class Tabeller {
 		System.out.println(resultat);
 		
 		int[] sjekkTabell = {1, 2, 4, 6, 10, 14};
-		boolean sjekk = finnesTall(sjekkTabell, );
+		boolean sjekk = finnesTall(sjekkTabell);
 		System.out.println(sjekk);
-		
-		
-		
-		 
 		
 
 		//String resultat = tilStreng(strengTabell);		
@@ -28,6 +24,10 @@ public class Tabeller {
 		//System.out.println("Posisjonen til tallet er: " + posisjon);
 		//posisjon = posisjonTall(posisjonTabell, 60);
         //System.out.println(posisjon);
+		
+		int [] reverserTabell = {1,2,3,4,5,6};
+		String nyTabell = reverser(reverserTabell);
+		System.out.print(nyTabell);
 
 	}
 
@@ -99,14 +99,15 @@ public class Tabeller {
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-		String nyTabell = "[";
+		int nyTabell = 0;
 		
 		for (int i = tabell.length; i > 0; i--) {
 			nyTabell += tabell[i];
 			if (i > 1) {
-				nyTabell += ",";
+				
 			}
 		}
+		
 		
 	}
 
