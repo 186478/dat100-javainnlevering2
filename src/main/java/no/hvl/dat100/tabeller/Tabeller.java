@@ -19,8 +19,8 @@ public class Tabeller {
 	// c)
 	public static int summer(int[] tabell) {
 
-		
-		
+		int sum = 0;
+
 	}
 
 	// d)
