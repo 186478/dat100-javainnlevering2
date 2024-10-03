@@ -4,14 +4,13 @@ public class Tabeller {
 
 	public static void main(String[] args) {
 		int[] heltallTabell = { 3, 7, 2, 8 };
-<<<<<<< HEAD
+
 		skrivUt(heltallTabell);
-=======
-		System.out.print("skrivUt: ");
+
+		System.out.print("\n------\nskrivUt: ");
 		skrivUt(heltallTabell);
 		
 		System.out.println("");
->>>>>>> e42cebcabb2cc4c2ca9a541d289e71689cd1198b
 
 		int[] strengTabell = { 42, 67, 89 };
 		String resultat = tilStreng(strengTabell);
@@ -111,31 +110,25 @@ public class Tabeller {
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
 
-<<<<<<< HEAD
 		for (int i = 0; i <= tabell.length; i++) {
-=======
+			
 		for (int i = 0; i < tabell.length; i++) {
->>>>>>> e42cebcabb2cc4c2ca9a541d289e71689cd1198b
 			if (tabell[i] == tall) {
 				return true;
 			}
 		}
-<<<<<<< HEAD
+
 		return false;
 	}
-=======
 
 		return false;
 	}
 
 	
->>>>>>> e42cebcabb2cc4c2ca9a541d289e71689cd1198b
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
 
-<<<<<<< HEAD
-=======
 		for (int i = 0; i < tabell.length; i++) {
 			if (tabell[i] == tall) {
 				return i;
@@ -143,7 +136,6 @@ public class Tabeller {
 		}
 		return -1;
 
->>>>>>> e42cebcabb2cc4c2ca9a541d289e71689cd1198b
 	}
 
 	// f)
