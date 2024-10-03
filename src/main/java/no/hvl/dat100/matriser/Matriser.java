@@ -3,10 +3,14 @@ package no.hvl.dat100.matriser;
 public class Matriser {
 
 	public static void main(String[] args) {
+//oppgave a
+		int[][] matrise1 = { { 3, 7, 2, 8 }, { 2, 3, 4, 5 }, { 3, 5, 2, 3 } };
+		skrivUt(matrise1);
 
-		int[][] matrise = { { 3, 7, 2, 8 }, { 2, 3, 4, 5 }, {3, 5, 2, 3 }};
+		System.out.println("__________oppgaveB___________");
+		String[][] matrise2 = { { "3", "7", "2", "8" }, { "2", "3", "4", "5" }, { "3", "5", "2", "3" } };
+		System.out.println(tilStreng(matrise2));
 
-		skrivUt(matrise);
 	}
 
 	// a) skrive ut matrisen over
@@ -15,7 +19,7 @@ public class Matriser {
 			for (int kol = 0; kol < matrise[rad].length; kol++) {
 				System.out.print(matrise[rad][kol]);
 
-				if (kol< matrise[rad].length - 1) {
+				if (kol < matrise[rad].length - 1) {
 					System.out.print(",");
 				}
 
@@ -24,11 +28,21 @@ public class Matriser {
 		}
 	}
 
-	
-	// b)
-	public static String tilStreng(int[][] matrise) {
-
-
+	// b) konvertere int til string
+	public static String tilStreng(String[][] matrise) {
+		StringBuilder sb = new StringBuilder();
+		for (int rad = 0; rad < matrise.length; rad++) {
+			for (int kol = 0; kol < matrise[rad].length; kol++) {
+				sb.append(matrise[rad][kol]);
+				if (kol < matrise[rad].length - 1) {
+					sb.append(", ");
+				}
+			}
+			if (rad < matrise.length - 1) {
+				sb.append("\n"); // Linjeskift etter hver rad
+			}
+		}
+		return sb.toString();
 	}
 
 	// c)
