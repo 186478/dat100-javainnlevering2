@@ -6,26 +6,16 @@ public class Matriser {
 //oppgave a
 		int[][] matrise1 = { { 3, 7, 2, 8 }, { 2, 3, 4, 5 }, { 3, 5, 2, 3 } };
 		skrivUt(matrise1);
-
-		System.out.println("__________oppgaveB___________");
-		String[][] matrise2 = { { "3", "7", "2", "8" }, { "2", "3", "4", "5" }, { "3", "5", "2", "3" } };
-		System.out.println(tilStreng(matrise2));
+		
+		int[][] matriseB = { {1,2,3}, {4,5,6}, {7,8,9} };
 
 	}
 
 	// a) skrive ut matrisen over
 	public static void skrivUt(int[][] matrise) {
-		for (int rad = 0; rad < matrise.length; rad++) {
-			for (int kol = 0; kol < matrise[rad].length; kol++) {
-				System.out.print(matrise[rad][kol]);
-
-				if (kol < matrise[rad].length - 1) {
-					System.out.print(",");
-				}
-
-			}
-			System.out.println();
-		}
+		
+		
+		
 	}
 
 	// b) konvertere int til string
