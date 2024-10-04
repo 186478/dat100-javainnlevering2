@@ -3,13 +3,18 @@ package no.hvl.dat100.matriser;
 public class Matriser {
 
 	public static void main(String[] args) {
-//oppgave a
+//oppgave a		
+		System.out.println("__________oppgave A___________");
 		int[][] matrise1 = { { 3, 7, 2, 8 }, { 2, 3, 4, 5 }, { 3, 5, 2, 3 } };
 		skrivUt(matrise1);
 
-		System.out.println("__________oppgaveB___________");
+		System.out.println("__________oppgave B___________");
 		String[][] matrise2 = { { "3", "7", "2", "8" }, { "2", "3", "4", "5" }, { "3", "5", "2", "3" } };
 		System.out.println(tilStreng(matrise2));
+
+		System.out.println("__________oppgave C___________");
+		   int[][] skalertMatrise = skaler(5, matrise1); // Skaler matrisen med 2
+	        skrivUt(skalertMatrise); // Skriv ut den skalerte matrisen
 
 	}
 
@@ -34,24 +39,34 @@ public class Matriser {
 		for (int rad = 0; rad < matrise.length; rad++) {
 			for (int kol = 0; kol < matrise[rad].length; kol++) {
 				sb.append(matrise[rad][kol]);
-				if (kol < matrise[rad].length - 1) {
-					sb.append(", ");
+	
 				}
-			}
-			if (rad < matrise.length - 1) {
-				sb.append("\n"); // Linjeskift etter hver rad
-			}
-		}
-		return sb.toString();
-	}
+	        sb.append("\n"); // Legger til ny linje etter hver rad
 
-	// c)
+			}
+	    return sb.toString(); // Returnerer strengen, ikke StringBuilder
+		
+			}
+		
+	
+	
+
+	// c) multipliser me matrisen
 	public static int[][] skaler(int tall, int[][] matrise) {
+		int[][] resultat = new int[matrise.length][matrise[0].length];
+		for (int rad = 0; rad < matrise.length; rad++) {
+			for (int kol = 0; kol < matrise[rad].length; kol++) {
+	            resultat[rad][kol] = matrise[rad][kol] * tall; 
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden skaler ikke implementert");
+			
+				}
+				
 
-	}
+			}
+			System.out.println();
+			return resultat;
+		}
+	
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
@@ -61,7 +76,7 @@ public class Matriser {
 
 	}
 
-	// e)
+	// e) Valgfri oppgave
 	public static int[][] speile(int[][] matrise) {
 
 		// TODO
@@ -70,7 +85,7 @@ public class Matriser {
 
 	}
 
-	// f)
+	// f) Valgfri oppgave
 	public static int[][] multipliser(int[][] a, int[][] b) {
 
 		// TODO
