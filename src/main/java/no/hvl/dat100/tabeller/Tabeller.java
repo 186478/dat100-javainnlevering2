@@ -110,7 +110,7 @@ public class Tabeller {
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
 
-		for (int i = 0; i <= tabell.length; i++) {
+	
 			
 		for (int i = 0; i < tabell.length; i++) {
 			if (tabell[i] == tall) {
@@ -121,8 +121,7 @@ public class Tabeller {
 		return false;
 	}
 
-		return false;
-	}
+
 
 	
 
@@ -179,4 +178,4 @@ public class Tabeller {
 		return sammensatt;
 
 	}
-}
+} 
