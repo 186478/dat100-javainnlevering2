@@ -8,8 +8,9 @@ public class Matriser {
 		skrivUt(matrise1);
 
 		System.out.println("__________oppgaveB___________");
-		String[][] matrise2 = { { "3", "7", "2", "8" }, { "2", "3", "4", "5" }, { "3", "5", "2", "3" } };
-		System.out.println(tilStreng(matrise2));
+		int[][] matrise2 = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
+		String streng = tilStreng(matrise2);
+		System.out.println(streng);
 
 		int[][] matrise3 = { { 3, 4, 5, 7 }, { 2, 3, 5, 7 }, { 1, 3, 6, 8, } };
 
@@ -34,20 +35,18 @@ public class Matriser {
 	}
 
 	// b) konvertere int til string
-	public static String tilStreng(String[][] matrise) {
-		StringBuilder sb = new StringBuilder();
-		for (int rad = 0; rad < matrise.length; rad++) {
-			for (int kol = 0; kol < matrise[rad].length; kol++) {
-				sb.append(matrise[rad][kol]);
-				if (kol < matrise[rad].length - 1) {
-					sb.append(", ");
-				}
-			}
-			if (rad < matrise.length - 1) {
-				sb.append("\n"); // Linjeskift etter hver rad
-			}
-		}
-		return sb.toString();
+	public static String tilStreng(int[][] matrise) {
+		String streng = "";
+        for (int i = 0; i < matrise.length; i++) {
+            for (int j = 0; j < matrise[i].length; j++) {
+            	streng += matrise[i][j];
+                if (j < matrise[i].length) {
+                	streng += " ";
+                }
+            }
+            streng += "\n"; 
+        }
+        return streng;
 	}
 
 	// c)
