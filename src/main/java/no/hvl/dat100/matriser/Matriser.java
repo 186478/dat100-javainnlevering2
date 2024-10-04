@@ -10,6 +10,8 @@ public class Matriser {
 		System.out.println("__________oppgaveB___________");
 		String[][] matrise2 = { { "3", "7", "2", "8" }, { "2", "3", "4", "5" }, { "3", "5", "2", "3" } };
 		System.out.println(tilStreng(matrise2));
+		
+		int[][] matrise3 = {{3, 4, 5, 7}, {2, 3, 5, 7}, {1, 3, 6, 8,} };
 
 	}
 
@@ -56,8 +58,8 @@ public class Matriser {
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden erLik ikke implementert");
+		
+	
 
 	}
 
