@@ -179,4 +179,4 @@ public class Tabeller {
 		return sammensatt;
 
 	}
-}
+} 
