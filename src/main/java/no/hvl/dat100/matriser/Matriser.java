@@ -10,9 +10,12 @@ public class Matriser {
 		System.out.println("__________oppgaveB___________");
 		String[][] matrise2 = { { "3", "7", "2", "8" }, { "2", "3", "4", "5" }, { "3", "5", "2", "3" } };
 		System.out.println(tilStreng(matrise2));
-		
-		int[][] matrise3 = {{3, 4, 5, 7}, {2, 3, 5, 7}, {1, 3, 6, 8,} };
 
+		int[][] matrise3 = { { 3, 4, 5, 7 }, { 2, 3, 5, 7 }, { 1, 3, 6, 8, } };
+
+		System.out.println("__________oppgave C___________");
+		int[][] skalertMatrise = skaler(2, matrise1); // Skaler matrisen med tall
+		skrivUt(skalertMatrise); // Skriv ut den skalerte matrisen
 	}
 
 	// a) skrive ut matrisen over
@@ -49,17 +52,17 @@ public class Matriser {
 
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden skaler ikke implementert");
-
+		int[][] resultat = new int[matrise.length][matrise[0].length];
+		for (int rad = 0; rad < matrise.length; rad++) {
+			for (int kol = 0; kol < matrise[rad].length; kol++) {
+				resultat[rad][kol] = matrise[rad][kol] * tall;
+			}
+		}
+		return resultat;
 	}
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
-
-		
-	
 
 	}
 
