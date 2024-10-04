@@ -3,7 +3,7 @@ package no.hvl.dat100.matriser;
 public class Matriser {
 
 	public static void main(String[] args) {
-//oppgave a
+
 		int[][] matrise1 = { { 3, 7, 2, 8 }, { 2, 3, 4, 5 }, { 3, 5, 2, 3 } };
 		skrivUt(matrise1);
 
@@ -12,11 +12,14 @@ public class Matriser {
 		String streng = tilStreng(matrise2);
 		System.out.println(streng);
 
-		int[][] matrise3 = { { 3, 4, 5, 7 }, { 2, 3, 5, 7 }, { 1, 3, 6, 8, } };
-
 		System.out.println("__________oppgave C___________");
 		int[][] skalertMatrise = skaler(2, matrise1); // Skaler matrisen med tall
 		skrivUt(skalertMatrise); // Skriv ut den skalerte matrisen
+		
+		System.out.println("__________oppgave d___________");
+		int[][] matrise3 = { { 3, 4, 5, 7 }, { 2, 3, 5, 7 }, { 1, 3, 6, 8, } };
+		//int[][] matrise4 = { { 3, 7, 2, 8 }, { 2, 3, 4, 5 }, { 3, 5, 2, 3 } };
+		System.out.println(erLik(matrise1, matrise3));
 	}
 
 	// a) skrive ut matrisen over
@@ -63,7 +66,18 @@ public class Matriser {
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
 
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[i].length; j++) {
+				
+				if (a[i][j] != b[i][j]) {
+					return false;
+				}
+			}	
+		}
+		return true;
 	}
+
+	
 
 	// e)
 	public static int[][] speile(int[][] matrise) {
@@ -83,8 +97,4 @@ public class Matriser {
 	}
 }
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden multipliser ikke implementert");
 
-	}
-}
